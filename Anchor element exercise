@@ -1,0 +1,10 @@
+<strong>Problem Statement:</strong><br/>
+<p>Create an html page with the filename as <b>exercise_anchortag.html</b> to learn about the usage of an anchor tag
+<!doctype html>
+<html>
+    <body>
+        <a href="http://lex.infosysapps.com" target="_blank"> Opens lex website in same tab </a>
+    </body>
+</html>
+
+<!-- save the file as "exercise_anchortag.html"-->
