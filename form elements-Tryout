@@ -1,0 +1,44 @@
+<strong>Problem Statement : </strong>
+<p> . create a  simple form to understand the radio buttons, check boxes and drop down lists.
+</p>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-compatible" content="ie=edge">
+<title>document</title>
+</head>
+<body>
+<form>
+<div>
+<label for="name">Name :</label>
+<input type="text" id="name"placeholder="enter your fullname">
+</div>
+<div>
+<label for="Gender">Gender :</label>
+<input type="radio"name="gender" id="male" value="male">Male
+<input type="radio" name="gender" id="female" value="female"> Female
+<input type="radio" name="other" id="others" value="others">Others
+</div>
+<div>
+<label for="hobbies">What are your HObbies :</label>
+<input type="checkbox" id="writing"name="hobbies"value="writing">Writing
+<input type="checkbox" id="singing"name="hobbies" value="singing">singing
+<input type="checkbox" id="travelling" name="hobbies"value="travelling">Travelling
+<input type="checkbox" id="others" name="hobbies" value="others">Others
+</div>
+<div>
+<label for="superhero">your favourite super hero</label>
+<select id="superhero">
+<option value="">--select--</option>
+<option value=" goku">Goku</option>
+<option value="Vegeta">Vegeta</option>
+<option value="batman">Batman</option>
+<option value="thor">Thor</option>
+<option value="Wolverrime">Wolverrime</option>
+</select>
+</div>
+</form>
+</body>
+</html>
