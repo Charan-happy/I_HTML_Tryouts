@@ -1,0 +1,23 @@
+<strong> problem statement :</strong><br/>
+<!--<p>. create a simple form that displays attributes of an input element</p>
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+<meta  http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<body>
+<form>
+  <label for ="Name:">Name : </label><input type="text" placeholder="enter your name" required/>
+  <br/><label for ="Age :">Age:</label><input type="number" placeholder="enter your age" required/>
+  <br/><label for = "Date Of Birth:">Date of Birth :</label> <input type="date"> 
+  <br/><label for="Email :">Email:</label><input type="email" placeholder="enter your mail id ex: xyz@gmail.com">
+  <br/><label for="What is your favourite color: ">What's your favourite color :</label><input type="color">
+  <br/><label for="Rate your course :">Rate your course :</label> <input type="range" name="points" min ="0" max="10">
+  <br/>
+  <input type="button" value="submit" />
+  </form>
+  </body>
+  </html>
