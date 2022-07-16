@@ -1,0 +1,60 @@
+<strong>Problem statement:</strong><br/>
+<p> . create a simple form named SimpleForm, with "simple Registration Form" as the heading to it. Below mentioned are requirements to be followed.
+<!--<table border="2">
+<th>Requirements of simple registration form</th>
+<td>
+<th>Requirements</th>
+<th>Description</th>
+<tr> Name</tr>
+<tr> <strong>Mandatory</strong>input field with<b>text</b>as its type. not more than <b>15</b>character long,and <b>focused</b> when page loads.
+</tr>
+<tr>password<strong>mandatory</strong>input field with the number of characters between 8 and 12 and starts with an alphabet and ends with a numbe
+</tr>
+<tr>Gender<strong>Radio button</strong>where the user can select only one among the three (male, female or others)
+</tr>
+<tr>Address<strong>text area</strong>of 4 rows and 20 columns with a maximum of 100 characters
+</tr>
+<tr>button(submit and Reset)creating <strong>two </strong>buttons with <b>submit</b>and <b>reset</b> types using form elements.
+
+</tr>
+</td>
+</table>-->
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Special input types in Demo</title>
+</head>
+<body>
+<h3><center>Simple Registration Form</h3>
+<center><form name="simpleform">
+<div>
+<label for="username">User Name : </label>
+<input type="text" autofocus="autofocus"name="username" max-length="15"required>
+.</div><br/><br/>
+<!-- focus is here when page is loaded)-->
+</div>
+<div>
+<label for="password">password :</label>
+<input type="password" min-length="8" max-length="12" name="password" pattern="^[A-Za-z]+[0-9]$" required>
+</div>
+<div>
+<label for="gender">Gender :</label>
+<!--radio button-->
+<input type="radio" value="Male" name="gender"required>Male
+<input type="radio" value="female" name="gender"required>Female
+<input type="radio" value="others" name="gender"required>others
+</div>
+<div>
+<label for="address">Address :</label>
+<textarea rows=4 cols=20 max-length="100"></textarea>
+</div><br/><br/>
+<button type="submit">Submit</button>
+&nbsp;
+<button type="reset">Reset</button>
+<br/><br/>
+</form>
+</center>
+</body>
+</html>
