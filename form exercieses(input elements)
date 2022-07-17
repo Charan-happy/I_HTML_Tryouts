@@ -1,0 +1,51 @@
+<!-- problem statement
+    <strong>Problem statement :</strong><br/><p>Modify the given registration form with the name "DLregForm", used for applying for driver's license. The form must contain the following fields with the mentioned validations:</p>
+<table border="2">
+    <caption>Required fields for driver's license form</caption>
+    <thead><th>
+        
+            fields
+        </th>
+<th>description</th>    </thead>
+<tbody>
+    <td>date of birth</td>
+    <td>Applicant's Date of Birth. Required.</td></tbody><tbody>
+    <td>Gender</td>
+    <td>Applicant's gender. Required. Can be Male, Female or Other</td>
+</tbody>
+<tbody>
+    <td>PAN</td>
+    <td>Applicant's PAN Required; contains aplhanumeric characters; can span max up to 10 characters.</td>
+</tbody>
+<tbody>
+    <td>LL No.</td>
+    <td>Lerner's License number. Required; contains alphanumeric characters; can span max up to 12 characters.</td>
+</tbody>
+</table>
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Input Elements</title>
+    </head>
+    <body>
+        <center>
+        <h1>DLregForm</h1>
+        
+        <br/>
+        <form method="post"><div>
+            <label for="dateofbirth">Date of Birth:<input type="date"required></label><br>
+            </br><label for ="Gender">Gender : <input type="radio"name="gender"value="male">male
+            <input type="radio"name="gender"value="female">female
+        <input type="radio"name="gender"value="others">other</label></br></br>
+            <label for="pancard">PAN :
+            <input type="text"maxlength="10" pattern=" [a-zA-z0-9]" placeholder="enter your 10 digit PAN"required></label></br>
+        </label></br>
+        <label for="LL No.">LL No. :
+            <input type="text" maxlength="12" pattern="[a-zA-Z0-9]" placeholder="enter your licence number" required></br>
+        </label></br><br/>
+            <input type="submit">
+        </form >
+        </center>
+    </body>
+</html>
