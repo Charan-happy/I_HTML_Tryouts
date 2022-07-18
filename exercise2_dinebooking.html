@@ -1,0 +1,62 @@
+<!--Problem Statement:
+Create a page exercise2_dine_booking.html for the customer to book a slot for dining
+
+The form must contain the following data in the given format.
+
+Visitor Name, Number of members, Contact No. , Email, Type of Food  (South Indian, North Indian, Chinese, Western (use check boxes)), Room Status (AC, Non AC(use radio buttons) and make AC default), Venue Preference (Arena, Fiesta, Vista, Mythri, Magna, Oasis, Amoeba (use dropdown list)) and have a “Book” submit type button and a “Reset” reset type button.
+
+ 
+
+Note: All the input fields are mandatory
+
+Visitor Name max length is 20 characters, should be autofocused.
+
+Number of members is of number type and can accept maximum of 2 digit number
+
+Contact No is of number type
+
+Email is of email type
+
+South Indian checkbox in Type of Food and AC radio button in Room Status must be checked by default. For the grouped checkboxes and radioButtons it is sufficient to have required attribute for one among them
+
+Amoeba must be disabled in Venue Preference drop down and value should be ""(empty String) for SELECT option
+-->
+<!<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>html form-exercises</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <center>
+    <body>
+        <h4>Dine Booking</h4>
+        <label for="visitor">Visitor Name :</label><input type="text" maxlength="20"autofocus/><br/>
+        <label for="members">Number of members :</label><input type="number" maxlength="2"/><br/>
+        <label for="contact no.">Contact No.</label><input type="number" minlength="10"maxlength="10"/><br/>
+        <label for="email">Email :</label><input type="Email" pattern="[a-z A-Z 0-9]+@[a-z A-Z 0-9]"/><br/>
+        <label for="food">Type of Food:</label>
+        <input type="checkbox" name="food" value="South Indian" checked>South Indian
+        <input type="checkbox" name="food" value="North Indian">North Indian
+        <input type="checkbox" name="food" value="Chinese">Chinese
+        <input type="checkbox" name="food" value="Western">Western<br/>
+        <label for="room status">Room Status :</label><input type="radio" name="room status" value="AC" checked>AC
+        <input type="radio" name="room status" value="Non-Ac">Non-AC<br/>
+        <label for="venue Preference">Venue Preference :</label><select>
+            <option value="select">--select--</option>
+            <option value="Arena">Arena</option>
+            <option value="Fiesta">Fiesta</option>
+            <option value="Vista">Vista</option>
+            <option value="Mythri">Mythri</option>
+            <option value="Magna">Magna</option>
+            <option value="Oasis">Oasis</option>
+            <option value="" disabled>Amoeba</option>
+        
+        </select><br/><br/>
+        <input type="button" value="Book"/>
+        <input type="Reset"/>
+    </body>
+    </center>
+</html>
