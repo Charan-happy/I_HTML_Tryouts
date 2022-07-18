@@ -1,0 +1,72 @@
+<!--<strong>problem statement</strong><br/>
+<p>    Modify the given customer registration form that accepts inputs for the following fields.</p>
+<center>
+<table border="1">
+        <caption>Different input fields in customer registration form</caption>
+    <thead>
+        <th>Fields</th><th>
+            Description
+        </th>
+    </thead>
+    <tbody>
+        <td>username</td>
+        <td>Customer's name. Focus should be placed here on page; must contain only alphabets; can span max upto 15 alphabets</td></tbody></tbody><tbody>
+    <td>password</td>
+        <td>Required data; contains alphanumeric character starting and ending with a digit. Can span between 8 to 12 characters.</td>
+    </tbody>
+    <tbody>
+        <td>email</td>
+        <td>Email validations:</td>
+    </tbody>
+    <tbody>
+        <td>Gender</td>
+        <td>	Use radio buttons to choose only one of the following - Male, Female, Other.</td>
+    </tbody>
+    <tbody>
+        <td>Age</td>
+        <td>	
+            Customer's age. Min value is 12 and max 60.</td>
+    </tbody>
+    <tbody>
+        <Td>Address</Td>
+        <td>	Use text area with 4 rows and 20 columns; max span 100 characters.</td>
+    </tbody><tbody><td>Company website</td>
+    <td>URL validations</td>
+    </tbody>
+    <tbody>
+        <td>choose country</td>
+        <td>Select from a dropdown list - India, United States, Germany, Japan</td>
+    </tbody>
+</table>
+</center>-->
+<html>
+<head>
+<title>Special Input Types Demo</title>
+</head>
+<body>
+    
+<h3><center>Customer Registration</center></h3><br><br>
+<center><form name="custom Form"> 
+	 <label for="username ">User Name	:  </label>
+     <input type="text"placeholder="enter your name" pattern="[a-z A-Z]" maxlength="15" autofocus="autofocus" required  > <br/><br/><!-- focus is here when page is loaded) -->
+     <label for="password :">Password 	:  </label><input type="text" pattern="[a-z A-Z 0-9]"minlength="8" maxlength="12"placeholder="start & end must with digit"><br><br>	<!-- password should contain alphabets imposed using pattern attribute -->
+	 <label for="email">Email	: </label>   <input type="email" size="30" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/> <br><br>  <!-- autocomplete provides auto fill feature when set to 'on' -->
+	 <label for="Gender :">Gender:</label>
+     <input type="radio" name="gender" value="male">male
+     <input type="radio"name="gender"value="female">Female
+     <input type="radio" name="gender" value="others">Others<!-- radio buttons--></br/></br>
+	 <label for="Age">Age (Yrs)	:  </label><input type="number" placeholder="enter your age(in yrs)"minlength="12" maxlength="60"/>   <br><br>	<!-- required attribute : Age is necessary -->
+	 <label for="address">Address: </label> <textarea cols="20" rows="4" maxlength="100 characters" >  </textarea><br><br>
+ 	 <label for="website"> website:  </label><input type="website" placeholder="enter your website URL">  <br><br>
+	 <label for="country">Choose country: </label><select name="country"><option value="---select --">---select country--</option><option value="india">India</option><option value="United States">United States</option>
+     <option value="Germany">Germany</option><option value="Japan">Japan</option>
+</select><br><br>
+	  <label for ="date of journey">Date of Journey: </label><input type="date">
+<br><br>
+<input type="Submit">
+<input type="Reset">
+
+</form>
+</center>
+</body>
+</html>
