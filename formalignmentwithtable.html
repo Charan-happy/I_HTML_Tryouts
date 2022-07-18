@@ -1,0 +1,57 @@
+<!--Problem Statement:
+Modify the previous exercise of form _dine_booking.html to display the form in a tabular format-->
+s<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>html form-exercises</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+        <body><form>
+            <center><h4>Dine Booking</h4></center>  
+        <center><table>
+            <tr>
+        <td><label for="visitor">Visitor Name :</label></td><td><input type="text" maxlength="20"autofocus/></td><br/>
+        </tr>
+        <tr>
+            <td><label for="members">Number of members :</label>
+                </td><td><input type="number" maxlength="2"/><br/>
+        </td></tr><tr>
+        <td><label for="contact no.">Contact No.</label></td><td><input type="number" minlength="10"maxlength="10"/></td><br/>
+        <tr><td>
+        <label for="email">Email :</label></td><td><input type="Email" pattern="[a-z A-Z 0-9]+@[a-z A-Z 0-9]"/></td><br/>
+        </tr>
+        <tr><td><label for="food">Type of Food:</label><td>
+        <input type="checkbox" name="food" value="South Indian" checked>South Indian
+        <input type="checkbox" name="food" value="North Indian">North Indian
+        <input type="checkbox" name="food" value="Chinese">Chinese
+        <input type="checkbox" name="food" value="Western">Western<br/>
+        </td></tr><tr>
+            <td><label for="room status">Room Status :</label></td>
+          <td>  <input type="radio" name="room status" value="AC" checked>AC
+        <input type="radio" name="room status" value="Non-Ac">Non-AC</td><br/>
+            </tr><tr><td>
+        <label for="venue Preference">Venue Preference :</label></td><td><select>
+            <option value="select">--select--</option>
+            <option value="Arena">Arena</option>
+            <option value="Fiesta">Fiesta</option>
+            <option value="Vista">Vista</option>
+            <option value="Mythri">Mythri</option>
+            <option value="Magna">Magna</option>
+            <option value="Oasis">Oasis</option>
+            <option value="" disabled>Amoeba</option>
+        
+        </select></td></tr><br/><br/>
+        <tr><td><input type="button" value="Book"/></td><br/>
+        <td>
+        <input type="Reset"/></td></tr>
+        </center>
+    </form>    
+    </table>
+    </body>
+
+    
+</html>
