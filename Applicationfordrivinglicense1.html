@@ -1,0 +1,47 @@
+<!--<h1>Problem Statement: </h1><br/>
+<p>Modify the given registration form with the name "DLregForm", for applying for driver's license. The form must contain the following fields with the mentioned validations:</p>
+<table border="1">
+    <caption>Required form field in driver's license form.</caption>
+    <thead>
+        <th>fields</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        <td>Name</td>
+        <td>Applicant's name. Required data; must contain only alphabets</td>
+    </tbody>
+    <tbody>
+        <td>Age</td>
+        <td>Applicant's age, Required data; contains only digits</td>
+    </tbody>
+    <tbody>
+        <td><Address></td>
+        <td>	Applicant's address. Required data; can span up to max 30 characters.</td>
+    </tbody>
+    <tbody>
+        <td>Contact no.</td>
+        <td>Applicant's phone number. Optional data; if provided must contain only numbers; min and max length is 10 digits.</td>
+    </tbody>
+</table>
+
+ Source Code :-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Input Elements</title>
+    </head>
+    <body>
+        <h3> Applicaton for Driving License</h3>
+        <br>
+        <form method="post">
+              <label for="name">Name: </label>
+                <input type="text" required="required" pattern="[A-Za-z]" placeholder="enter your full name">
+                <br/>
+                <br/>
+                <label for="age">Age :</label><input type="numbers" pattern="[0-9]" required maxlength="100" placeholder="enter your age (in yrs)"><br/><br/>
+                <label for="address">Address :</label><textarea maxlength="30 characters"></textarea>
+        <br/><br/><label for="contactno.">contact no.</label><input type="number" minlength="10" maxlength="10"><br/><br/><input type="checkbox"/>  I own an expired driver's license.<br>
+                <input type="submit">
+        </form>
+    </body>
+</html>
